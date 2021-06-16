@@ -260,6 +260,10 @@ a {
   line-height: 1.166;
 }
 
+.img-thumb {
+  position: relative;
+}
+
 .unique-list {
   margin: 0;
   padding: 0;
@@ -271,13 +275,23 @@ a {
   display: block;
 }
 
-/*.item-unique {
-  margin-right: 30px;
-  flex-basis: calc(100% / 3);
+.unique-subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 23.8095%;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--second-colour);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.examples-img {
-  margin-right: -30px;
-}*/
+
+.item-unique {
+  display: inline-block;
+}
 
 .item-unique:not(:last-child) {
   margin-right: 30px;
