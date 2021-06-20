@@ -15,10 +15,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-  </head>
+     </head>
   <!--Шапка сайта-->
   <body>
-    <header>
+    <header class="header-line">
       <!--Навигация-->
       <div class="container head-box">
         <nav class="nav-bar">
@@ -52,7 +52,7 @@
         <div class="back-image">
         <div class="action container">
           <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
         </div>
       </section>
@@ -340,6 +340,20 @@
    </ul>
  </section>
 
+  <!--модалка-->
+       <div class="backdrop is-hidden" data-modal>
+         <div class="modal">
+           <button type="button" class="button-close " data-modal-close>
+             <svg width="11"
+              height="11">
+               <use href="./images/symbol-defs.svg#close"></use>
+             </svg>
+           </button>
+         </div>
+
+       </div>
+      
+
     <!--Подвал-->
     <footer >
       <div class="section-dark">
@@ -383,5 +397,6 @@
         </div>
       
     </footer>
+     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -55,6 +55,9 @@ a {
 
 .header-line {
   border-bottom: #ececec solid 1px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*nav*/
@@ -89,6 +92,7 @@ a {
   color: var(--normal-colour);
   text-decoration: none;
   letter-spacing: 0.02em;
+  padding: 100% 0;
 }
 .nav-links a:hover,
 .nav-links a:focus {
@@ -130,6 +134,7 @@ a {
   text-decoration: none;
   text-align: left;
   font-style: normal;
+  padding: 100% 0;
 }
 .kont-links a:hover,
 .kont-links a:focus {
@@ -198,6 +203,9 @@ a {
 }
 .section-dark {
   background-color: var(--backroud-dark);
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .back-image {
   background-repeat: no-repeat;
@@ -333,6 +341,9 @@ a {
 
 .section-grey {
   background-color: var(--filter-colour);
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-cards {
@@ -475,6 +486,55 @@ a {
   transition-property: color, border-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*modal*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: var(--second-colour);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  border-radius: 50%;
+  background-color: var(--second-colour);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }
 /*footer*/
 .footer {
