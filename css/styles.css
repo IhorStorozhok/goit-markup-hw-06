@@ -237,7 +237,7 @@ a {
   text-decoration: none;
   border-width: unset;
   border-style: none;
-  font-size: 15px;
+  font-size: 16px;
   font-family: inherit;
   font-weight: 700;
   line-height: 1.875;
@@ -520,8 +520,11 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
+
+  padding-right: 39px;
+  padding-left: 41px;
 
   background-color: var(--second-colour);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -542,6 +545,54 @@ a {
   display: inline-block;
   width: 30px;
   height: 30px;
+}
+
+.modal-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 12px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.modal-form {
+  font-weight: 500;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: var(--backfone-colour);
+}
+
+.modal-form-list {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.15px;
+  letter-spacing: 0.01em;
+}
+
+.modal-form-id {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.test {
+  display: block;
+}
+
+.modal-form-field {
+  display: block;
+  margin-top: 11px;
+  padding: 0;
+}
+
+.modal-form-id textarea {
+  width: 448px;
+  height: 120px;
+  resize: none;
 }
 /*footer*/
 .footer {
@@ -586,9 +637,10 @@ a {
   line-height: 1.142;
   color: var(--second-colour);
   letter-spacing: 0.03em;
-  margin-left: 70px;
-  margin-top: 72px;
-  margin-bottom: 100px;
+  margin-left: 73px;
+  margin-top: 75px;
+  margin-bottom: 97px;
+  margin-right: 93px;
 }
 
 .soc-links-footer {
@@ -637,6 +689,42 @@ a {
 
 .super {
   display: flex;
+}
+
+.subscribe-field {
+  margin-top: 20px;
+  padding: 0 0 0 16px;
+
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: inherit;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: var(--main-font);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.subscribe-us {
+  margin-top: 72px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  color: var(--second-colour);
+  letter-spacing: 0.03em;
+}
+
+.subscribe-icon {
+  margin-left: 10px;
+}
+
+.subscribe-us .button {
+  display: inline-flex;
+  margin: 20px 0 0 12px;
 }
 /*portfolio*/
 
