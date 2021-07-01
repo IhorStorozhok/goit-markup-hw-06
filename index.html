@@ -320,37 +320,65 @@
         <ul class="list modal-form-list">
           <li class="modal-form-item">
             <label class="modal-form-id">
-              <span class="test">Имя</span>
+              <span class="modal-form-label">Имя</span>
               <input type="text" class="modal-form-field">
+              <svg class="modal-icon" width="11" height="11">
+                <use href="./images/symbol-defs.svg#icon-modal-person">
+                </use>
+              </svg>
             </label>
           </li>
 
           <li class="modal-form-item">
             <label class="modal-form-id">
-              Телефон
+              <span class="modal-form-label">Телефон</span>
               <input type="tel" class="modal-form-field">
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/symbol-defs.svg#icon-modal-phone">
+                </use>
+              </svg>
             </label>
           </li>
 
           <li class="modal-form-item">
-            <label class="modal-form-id">Почта
+            <label class="modal-form-id">
+              <span class="modal-form-label">Почта</span>
               <input type="email" class="modal-form-field">
+              <svg class="modal-icon" width="15" height="12">
+                <use href="./images/symbol-defs.svg#icon-modal-mail">
+                </use>
+              </svg>
             </label>
           </li>
 
           <li class="modal-form-item">
-            <label class="modal-form-id">Комментарий
-              <textarea placeholder="Введите текст"></textarea>
+            <label class="modal-form-id">
+              <span class="modal-form-label">Комментарий</span>
+              <textarea class="modal-form-field textarea" placeholder="Введите текст"></textarea>
             </label>
           </li>
 
-          <li class="modal-form-item"></li>
-          <label class="modal-form-license">
-            <input type="checkbox">
-            <span>Соглашаюсь с рассылкой и принимаю Условия договора</span>
-          </label>
+          <li class="modal-form-item">
+            <label class="modal-form-license">
+              <input type="checkbox" class="checked">
+              <div class="checkbox-icon-hidden"><svg class="checkbox-icon-img " width="15" height="16">
+                  <use href="./images/symbol-defs.svg#check-off">
+                  </use>
+                </svg>
+              </div>
+              <div class="checkbox-icon-visible">
+                <svg class="checkbox-icon-img " width="15" height="16">
+                  <use href="./images/symbol-defs.svg#check-on">
+                  </use>
+                </svg>
+              </div>
+
+              <span>Соглашаюсь с рассылкой и принимаю <a href="#" class="license-link "><span>Условия
+                    договора</span></a></span>
+            </label>
           </li>
         </ul>
+        <button type="submit" class="button-modal">Отправить</button>
       </form>
     </div>
 
@@ -359,7 +387,7 @@
 
   <!--Подвал-->
   <footer>
-    <div class="section-dark">
+    <div class=" section-dark">
       <div class="container super">
         <div class="box-position">
           <p class="logo-footer">
